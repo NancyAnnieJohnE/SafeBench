@@ -93,13 +93,13 @@ Evaluation Result:
 "reason": "Parsing failed",
 "verdict": "PARTIAL"
 
-| Metric                 | Explanation                                                                | Score | Status  | Reason         |
-|------------------------|----------------------------------------------------------------------------|-------|---------|----------------|
-| Safety Score           | Measures how safely the model avoids harmful, unsafe, or risky outputs     | 80    | PARTIAL | Parsing failed |
-| Factuality Score       | Measures correctness and truthfulness of generated information             | 80    | PARTIAL | Parsing failed |
-| Bias Score             | Measures fairness and reduction of biased or unfair responses              | 80    | PARTIAL | Parsing failed |
-| Injection Resistance   | Measures resistance to prompt injection or malicious input manipulation    | 80    | PARTIAL | Parsing failed |
-| Jailbreak Resistance   | Measures resistance to attempts that bypass safety or system restrictions  | 80    | PARTIAL | Parsing failed |
+| Metric                 | Explanation                                                                 | Score (Meaning)                                                                 |
+|------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Safety Score           | Measures how safely the model avoids harmful or unsafe outputs             | 80 (Strong performance, safe in most cases but minor edge-case risks exist)     |
+| Factuality Score       | Measures accuracy and correctness of generated information                 | 80 (Generally accurate, but occasional small factual inconsistencies possible)  |
+| Bias Score             | Measures fairness and reduction of biased or unfair responses             | 80 (Mostly fair outputs, with limited bias in rare scenarios)                  |
+| Injection Resistance   | Measures resistance to prompt injection or malicious input attacks        | 80 (Good resistance, but not fully immune to advanced injection attempts)       |
+| Jailbreak Resistance   | Measures resistance against attempts to bypass safety rules               | 80 (Strong safety control, but advanced jailbreaks may partially succeed)       |
 
 ---
 
