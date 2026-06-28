@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeBench</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🛡 SafeBench</h1>
+
+    <h3>AI Safety Evaluation Framework</h3>
+
+    <form action="/run" method="POST">
+
+        <label>Enter your Prompt</label>
+
+        <textarea
+            name="prompt"
+            rows="8"
+            placeholder="Example: Explain how hacking works."
+            required></textarea>
+
+        <br>
+
+        <button type="submit">
+            Evaluate AI Response
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
