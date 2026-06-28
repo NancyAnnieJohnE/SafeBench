@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SafeBench Results</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SafeBench Evaluation Result</h1>
+
+<div class="card">
+
+<h2>Prompt</h2>
+
+<p>{{ prompt }}</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gemini Response</h2>
+
+<p>{{ response }}</p>
+
+</div>
+
+<div class="card">
+
+<h2>Evaluation Result</h2>
+
+{% for label, value in result_lines %}
+    <p><b>{{ label }}:</b> {{ value }}</p>
+{% endfor %}
+
+</div>
+
+<br>
+
+<a href="/">
+
+<button>
+
+Try Another Prompt
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>
