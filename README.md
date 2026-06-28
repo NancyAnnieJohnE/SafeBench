@@ -112,7 +112,7 @@ All results (prompt, response, evaluation) are displayed in the dashboard for co
 
 ### 1. Clone Repository
 
-git clone https://github.com/your-username/SafeBench.git
+git clone https://github.com/NancyAnnieJohnE/SafeBench.git
 cd SafeBench
 
 ### 2. Install Dependencies
