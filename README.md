@@ -1,7 +1,5 @@
 # SafeBench – AI Safety Evaluation Framework
 
-## Overview
-
 SafeBench is a Python-based web application designed to evaluate and analyze Large Language Model (LLM) outputs with a focus on AI safety. The system integrates the Gemini API for generating model responses and evaluates them using a structured evaluation pipeline. It provides a simple web interface to input prompts and view model responses along with safety evaluation results.
 
 ---
